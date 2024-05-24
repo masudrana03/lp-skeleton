@@ -1,0 +1,26 @@
+{
+    "name": "lazy-hub/lazyadmin-laravel",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LazyHub\\LazyadminLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "masudrana03",
+            "email": "920mash@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LazyHub\\LazyadminLaravel\\LazyAdminServiceProvider"
+            ],
+            "aliases": {
+                "LazyAdmin": "LazyHub\\LazyadminLaravel\\LazyAdmin"
+            }
+        }
+    }
+}
