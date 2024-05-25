@@ -13,7 +13,7 @@ class LazyAdminServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->singleton("lazy-admin", function ($app){
+        $this->app->singleton("lazy-admin", function ($app) {
             return new LazyAdmin();
         });
     }
@@ -25,5 +25,23 @@ class LazyAdminServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // dd('i lazy admin laravel is available');
+
+        if (!$this->app->runningInConsole()) {
+            return;
+        }
+
+        $this->commands([
+            Console\InstallCommand::class,
+        ]);
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [Console\InstallCommand::class];
     }
 }
