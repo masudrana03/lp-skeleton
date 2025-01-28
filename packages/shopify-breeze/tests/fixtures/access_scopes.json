@@ -1,0 +1,14 @@
+{
+    "data": {
+        "currentAppInstallation": {
+            "accessScopes": [
+                {
+                    "handle": "write_products"
+                },
+                {
+                    "handle": "read_products"
+                }
+            ]
+        }
+    }
+}

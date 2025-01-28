@@ -13,6 +13,13 @@
             "options": {
                 "symlink": true
             }
+        },
+         "shopify/breeze": {
+            "type": "path",
+            "url" : "packages/shopify-breeze",
+            "options": {
+                "symlink": true
+            }
         }
     },
     "license": "MIT",
@@ -20,7 +27,8 @@
         "php": "^8.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "lazy-hub/lazyadmin-laravel" : "@dev"
+        "lazy-hub/lazyadmin-laravel" : "@dev",
+        "shopify/breeze" : "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

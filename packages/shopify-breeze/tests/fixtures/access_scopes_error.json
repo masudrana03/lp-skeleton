@@ -1,0 +1,10 @@
+{
+    "data": {
+        "currentAppInstallation": {
+            "accessScopes": [],
+            "userErrors": {
+                "message": "Could not get access copes"
+            }
+        }
+    }
+}
